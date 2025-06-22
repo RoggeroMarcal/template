@@ -1,0 +1,101 @@
+:root {
+    --primary: #9ad2da;
+    --primary-light: #5fb0bd;
+    --secondary: #f8f0fa;
+    --text: #333;
+    --text-light: #666;
+    --font-titulo: 'Playfair Display', serif;
+    --font-menu: 'Lato', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif; /* Mudei para manter consistência com o menu */
+    color: var(--text);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+header {
+    margin: 0;
+    font-size: 2.5rem; /* Aumentei levemente para melhor hierarquia */
+    color: white; /* Mudei para contrastar com o fundo azul */
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    background-color: var(--primary); /* Adicionei para o header ter fundo azul */
+    padding: 1.5rem 0; /* Espaçamento interno */
+}
+
+nav {
+    margin-top: 1.5rem;
+    font-family: var(--font-menu);
+    font-weight: 600;
+}
+
+nav a {
+    color: #0a78e6; /* Corrigido: removida a duplicação */
+    text-decoration: none; /* Adicionado espaço após ':' */
+    margin: 0 1rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-weight: 600; /* Valor corrigido para "negrito" (400=normal, 600=semibold) */
+}
+nav a:hover {
+    text-decoration: underline; /* Sublinha ao invés de mudar fundo */
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-light);
+    }
+
+section {
+    margin-bottom: 3rem;
+}
+
+input { padding: 0.8rem;
+        width: 60%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        margin: 0 auto;
+        display: block;
+}
+
+button { background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+
+}
+
+button:hover{
+    background-color: var(--primary-light);
+}
+
+footer{
+    padding:1.5rem;
+    color:var(--text-ligth);
+    font-size: 0.9rem;
+}
+
